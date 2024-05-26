@@ -209,7 +209,9 @@
   <!-- services -->
   <section id="service">
     <div class="section-title">
-      <h2 style="text-align: center;">From HOD's Desk</h2>		</div>    <div class="container-fluid" id="service-container">
+      <h2 style="text-align: center;">From HOD's Desk</h2>		
+    </div>    
+	  <div class="container-fluid" id="service-container">
       <div class="row" id="banner-row">
         <div class="col-md-12 px-8" id="service-col2">
           <img id="image-container" src="img/Hod Sir.jpg" class="img-fluid rounded mx-auto d-block i1" alt="..." width="500px"
@@ -248,7 +250,21 @@
         </div>
         
            </section>
-
+<script>
+  function readMore() {
+    var para = document.getElementById("para");
+    var btn = document.getElementById("readMoreBtn");
+  
+    if (para.style.height === "145px") {
+      para.style.height = "auto";
+      btn.innerHTML = "Read Less";
+    } else {
+      para.style.height = "145px";
+      btn.innerHTML = "Read More";
+    }
+  }
+  
+  </script>
            <br>
 
         <div class="section-title">
@@ -644,21 +660,6 @@
       </div>
   </footer>
   <!-- End Footer -->
-  <script>
-  function readMore() {
-    var para = document.getElementById("para");
-    var btn = document.getElementById("readMoreBtn");
-  
-    if (para.style.height === "145px") {
-      para.style.height = "auto";
-      btn.innerHTML = "Read Less";
-    } else {
-      para.style.height = "145px";
-      btn.innerHTML = "Read More";
-    }
-  }
-  
-  </script>
 </body>
 
 </html>
