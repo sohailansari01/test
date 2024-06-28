@@ -70,30 +70,6 @@
       #image-container:hover:before {
         opacity: 1;
       }
-/*       
-   #service
-   {
-    background-image: url(img/hello.jpg);
-
-   } */
-      
-    #para, #para1,#para3,#para4 {
-        overflow: hidden;
-        height: 145px;
-    }
-    
-     #readMoreBtn,#readMoreBtn1,#readMoreBtn2,#readMoreBtn3 {
-        background-color: blue;
-        color: white;
-        text-overflow: hidden;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-     }
-
-/* Container for the entire HOD's Desk section */
 /* Container for the entire HOD's Desk section */
 #hod-desk {
     padding: 10px;
@@ -106,50 +82,50 @@
 
 /* Container for the image and text */
 .content-container {
-    display: flex;           /* Use flexbox for layout */
-    flex-wrap: wrap;         /* Allow wrapping on smaller screens */
-    align-items: flex-start; /* Align items to the top */
+    display: flex;           
+    flex-wrap: wrap;        
+    align-items: flex-start;
 }
 
 /* Image column settings */
 .image-column {
-    flex: 0 0 43%;         /* Fixed width for the image column */
-    margin-left: 30px;      /* Space to the left of the image */
+    flex: 0 0 43%;         
+    margin-left: 30px;     
 }
 
 /* Image settings */
 .hod-image {
-    border-radius: 5%;      /* Apply rounded corners to the image */
-    max-width: 100%;        /* Ensure the image doesn't exceed its container */
-    display: block;         /* Ensure proper display of the image */
-    margin-bottom: 30px;    /* Space below the image */
+    border-radius: 5%;      
+    max-width: 100%;        
+    display: block;       
+    margin-bottom: 30px;    
 }
 
 /* Heading below the image */
 .hod-heading {
-    font-family: inherit;   /* Inherit the font family from the global settings */
-    text-align: center;     /* Center the heading text */
-    font-size: 30px;        /* Adjust the size of the heading */
-    margin-top: 20px;       /* Increase space above the heading for separation from the image */
-    margin-bottom: 15px;    /* Space below the heading */
+    font-family: inherit;   
+    text-align: center;     
+    font-size: 30px;        
+    margin-top: 20px;       
+    margin-bottom: 15px;    
 }
 
 /* Text column settings */
 .text-column {
-    flex: 1;                /* Allow the text column to grow and take remaining space */
+    flex: 1;                
 }
 
 /* Paragraph styles */
 .hod-message {
-    color: rgb(0, 0, 0);    /* Text color */
-    text-align: justify;   /* Justify the text for clean alignment */
-    font-size: 19px;        /* Font size */
-    margin-top: 0;          /* Remove top margin */
-    margin-bottom: 0;       /* Remove bottom margin */
-    padding: 0 15px;        /* Padding around the text */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    line-height: 1.5;       /* Line height for readability */
-    font-family: 'Arial', sans-serif; /* Ensure it uses the global font family */
+    color: rgb(0, 0, 0);    
+    text-align: justify;   
+    font-size: 19px;       
+    margin-top: 0;          
+    margin-bottom: 0;       
+    padding: 0 15px;        
+    box-sizing: border-box; 
+    line-height: 1.5;      
+    font-family: 'Arial', sans-serif;
 }
 
 /* Responsive styles */
@@ -157,20 +133,59 @@
     /* Stack image and text vertically */
     .image-column,
     .text-column {
-        flex: 0 0 100%;     /* Full width for both columns on small screens */
-        margin: 0;          /* Reset margin */
-        text-align: center; /* Center align text for better readability */
+        flex: 0 0 100%;    
+        margin: 0;          
+        text-align: center; 
     }
     .hod-image {
-        max-width: 90%;     /* Reduce image size for mobile */
-        margin: 0 auto 20px; /* Center the image and add space below */
+        max-width: 90%;     
+        margin: 0 auto 20px; 
     }
     .hod-message {
-        text-indent: 0;      /* Remove text indentation for narrow screens */
-        text-align: left;    /* Left-align text for better readability on mobile */
-        padding: 15px;       /* Adjust padding for better fit on small screens */
+        text-indent: 0;      
+        text-align: left;    
+        padding: 15px;      
     }
 }
+
+
+  /* Slideshow container */
+  .slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  overflow: hidden; 
+  border-radius: 15px; 
+  }
+  
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 12s ease;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .3} 
+    to {opacity: 20}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
 
 
 </style>
@@ -330,8 +345,7 @@
           <div class="row" id="banner-row">
             <div class="col-md-12 px-8" id="service-col2">
           <h2 style="text-align: center;">Faculty Co-ordinator's Desk</h2>		
-        </div>
-          
+        </div>   
         <div class="col-md-6 px-3" id="service-col2">
           <br>
           <br>
@@ -353,7 +367,6 @@
             <br>
             
           </p>
-            <!-- <button onclick="readMore2()" style="position: absolute; left: 40px;" id="readMoreBtn1">Read More</button> -->
           <br>
           <br>
           <br>
@@ -383,8 +396,6 @@
   </section>
 
   
-  <!-- Team -->
-
    <!-- ======= Team Section ======= -->
    <section id="team" class="team section-bg">
     <div class="container" data-aos="fade-up">
@@ -473,53 +484,10 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
   <!-- End Team Section -->
-  
-  <style>
-  
-  /* Slideshow container */
-  .slideshow-container {
-  max-width: 700px;
-  position: relative;
-  margin: auto;
-  overflow: hidden; 
-  border-radius: 15px; 
-  }
-  
-  
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 12s ease;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .3} 
-    to {opacity: 20}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-  </style>
 <br>
 <br>
 
@@ -583,31 +551,6 @@
     <span class="dot"></span> 
   </div>
   
-  <script>
-  let slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
-  </script>
-  
-  </body>
-  </html> 
-  
   <!-- Gallery-END -->
 <br>
 <br>
@@ -659,13 +602,15 @@
             <div class="col-lg-7">
               <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14877.891488523317!2d78.9731987!3d21.2130893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4e97f454d37d5%3A0x32dca0144110c4a8!2sS.%20B.%20Jain%20Institute%20of%20Technology%2C%20Management%20%26%20Research%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1719262529880!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 470px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </form>
-            </div><!-- End Contact Form -->
+            </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section>
+     <!-- End Contact Form -->
+      
   <!-- footer -->
   <footer id="footer">
 
@@ -740,6 +685,25 @@
     }
   }
   
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
   </script>
 </body>
 
